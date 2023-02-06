@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <link rel="stylesheet" href="style.css" type="text/css" id="style_sheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Poppins&display=swap" rel="stylesheet">
+
+    <script src="script.js" type="text/javascript"></script>
+
+</head>
+<body>
+    <div id="heading">
+        <h1>Simple Calculator</h1>
+    </div>
+    <!--Very simple HTML - essentially just containers filled with buttons-->
+    <div id="calculator_body">
+        <div id="calculator_grid">
+            <div id="row_1" class="grid_row">
+                <div id="calculator_output">
+                    <!--Initially blank, will be changed by script - section for calculator display-->
+                </div>
+            </div>
+            <!--Number and operation buttons-->
+            <div id="row_2" class="grid_row">
+                <div id="number_7" class="calc_feature calc_number">
+                    <input type="button" value="7" onclick="numSeven(); appendOutput();" id="no7">
+                </div>
+                <div id="number_8" class="calc_feature calc_number">
+                    <input type="button" value="8" onclick="numEight(); appendOutput();" id="no8">
+                </div>
+                <div id="number_9" class="calc_feature calc_number">
+                    <input type="button" value="9" onclick="numNine(); appendOutput();" id="no9">
+                </div>
+                <div id="divide" class="calc_feature calc_operator_sign">
+                    <input type="button" value="÷" onclick="opDiv(); appendOutput();" id="divb">
+                </div>
+                <div id="sine" class="calc_feature calc_operator">
+                    <input type="button" value="sin" onclick="opSin(); appendOutput();" id="sin">
+                </div>
+            </div>
+            <div id="row_3" class="grid_row">
+                <div id="number_4" class="calc_feature calc_number">
+                    <input type="button" value="4" onclick="numFour(); appendOutput();" id="no4">
+                </div>
+                <div id="number_5" class="calc_feature calc_number">
+                    <input type="button" value="5" onclick="numFive(); appendOutput();" id="no5">
+                </div>
+                <div id="number_6" class="calc_feature calc_number">
+                    <input type="button" value="6" onclick="numSix(); appendOutput();" id="no6">
+                </div>
+                <div id="multiply" class="calc_feature calc_operator_sign">
+                    <input type="button" value="×" onclick="opTim(); appendOutput();" id="timb">
+                </div>
+                <div id="cosine" class="calc_feature calc_operator">
+                    <input type="button" value="cos" onclick="opCos(); appendOutput();" id="cos">
+                </div>
+            </div>
+            <div id="row_4" class="grid_row">
+                <div id="number_1" class="calc_feature calc_number">
+                    <input type="button" value="1" onclick="numOne(); appendOutput();" id="no1">
+                </div>
+                <div id="number_2" class="calc_feature calc_number">
+                    <input type="button" value="2" onclick="numTwo(); appendOutput();" id="no2">
+                </div>
+                <div id="number_3" class="calc_feature calc_number">
+                    <input type="button" value="3" onclick="numThree(); appendOutput();" id="no3">
+                </div>
+                <div id="plus" class="calc_feature calc_operator_sign">
+                    <input type="button" value="+" onclick="opAdd(); appendOutput();" id="addb">
+                </div>
+                <div id="tangent" class="calc_feature calc_operator">
+                    <input type="button" value="tan" onclick="opTan(); appendOutput();" id="tan">
+                </div>
+            </div>
+            <div id="row_5" class="grid_row">
+                <div id="dot" class="calc_feature">
+                    <input type="button" value="." onclick="numDot(); appendOutput();" id="dotb">
+                </div>
+                <div id="number_0" class="calc_feature calc_number">
+                    <input type="button" value="0" onclick="numZero(); appendOutput();" id="no0">
+                </div>
+                <div id="equals" class="calc_feature">
+                    <input type="button" value="=" onclick="Equals()">
+                </div>
+                <div id="minus" class="calc_feature calc_operator_sign">
+                    <input type="button" value="-" onclick="opMin(); appendOutput();" id="minb">
+                </div>
+                <div id="clear_all" class="calc_feature">
+                    <input type="button" value="Clear" onclick="clearAll(); appendOutput();" id="clear">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
