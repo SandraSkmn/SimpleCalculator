@@ -1,5 +1,3 @@
-//So I wrote all of this first as a challenge using what I already know, and at the end did a google search to see more efficient ways of making a calculator... I see now that the eval() function could cut this by around 75% (at least the doMaths bit)!//
-
 //All code assumes inputted parameter will be a string//
 
 //Not all possible simple arithmetic is accounted for - code will not except 10/-5 for example, as handling of negative numbers hasn't been coded in - instead will throw out error//
